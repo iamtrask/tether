@@ -23,12 +23,13 @@ go build ./cmd/createtree/
 <LOGID printed here>
 ```
 
-Build and run geth:
+Build and run geth.
+Note that it will take time for geth to actually start downloading blocks, watch for status updates on its console.
 
 ```bash
 # In yet another terminal:
 make geth
-build/bin/geth --cache=512 --verbosity 3 console
+build/bin/geth --cache=512 --verbosity 3 --rpc --fast console
 
 ```
 
